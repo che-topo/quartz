@@ -1,0 +1,38 @@
+/* Basic button styling */
+#localeSwitcher {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Default button color for English */
+html[lang="en"] #localeSwitcher {
+  background-color: #007BFF;
+}
+
+/* Button color for Spanish locale */
+html[lang="es"] #localeSwitcher {
+  background-color: #28A745;
+}
+
+/* Hide both texts by default */
+.english,
+.spanish {
+  display: none;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* Show English text when language is English */
+html[lang="en"] .english {
+  display: block;
+}
+
+/* Show Spanish text when language is Spanish */
+html[lang="es"] .spanish {
+  display: block;
+}
